@@ -1,12 +1,24 @@
 import * as dotenv from 'dotenv'
-import express from "express"
 import { tweet } from './cron/cron'
 
-const app = express()
-
-app.use('/cron', tweet)
-
 dotenv.config()
+
+module.exports = async (req, res) => {
+    try {
+        await tweet()
+
+        res.send({
+            status: 200,
+            message: "Cron done!",
+        })
+    } catch (error) {
+        res.send({
+            status: 500,
+            message: "Error",
+            data: error
+        })
+    }
+}
 
 
 
