@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --output public"
+    "build": "tsc"
   },
   "author": "g-zecchi",
   "license": "ISC",
