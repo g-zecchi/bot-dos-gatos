@@ -3,7 +3,7 @@ import { tweet } from './cron/cron'
 
 dotenv.config()
 
-module.exports = async (req, res) => {
+module.exports = async (req: any, res: any) => {
     try {
         await tweet()
 
