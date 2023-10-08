@@ -1,0 +1,13 @@
+# Ignorar arquivos .env
+*.env
+
+# Ignorar arquivos de configuração IDE
+.vscode/
+.idea/
+
+# Ignorar diretório de dependências (exemplo: node_modules)
+node_modules/
+
+# Ignorar arquivos JS
+*.js
+
