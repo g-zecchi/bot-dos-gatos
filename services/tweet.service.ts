@@ -25,6 +25,7 @@ const getImageType = (imageUrl: string): string => {
 
 export const tweet = async () => {
     try {
+        console.log('chamei')
         const imageUrl = (await getImages())[0].url
         const imageBuffer = await getImageBuffer(imageUrl)
         const mimeType = getImageType(imageUrl)

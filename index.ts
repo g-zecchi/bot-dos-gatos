@@ -2,8 +2,8 @@ import * as dotenv from 'dotenv'
 import { tweet } from './services/tweet.service'
 
 dotenv.config()
-
-setTimeout(tweet, 1728000)
+console.log('chamei1 ')
+setTimeout(tweet, 60000)
 
 
 
