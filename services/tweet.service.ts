@@ -29,7 +29,7 @@ export const tweet = async () => {
         const imageBuffer = await getImageBuffer(imageUrl)
         const mimeType = getImageType(imageUrl)
         const mediaId = await twitterClient.v1.uploadMedia(imageBuffer, { mimeType })
-        await twitterClient.v2.tweet('', { media: { media_ids: [mediaId] } })
+        await twitterClient.v2.tweet('miau', { media: { media_ids: [mediaId] } })
     } catch (error) {
         console.error(error)
     }
